@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window size="600,400" caption="0,0,0,35" sizebox="(4,4,6,6)">
+  <VBox bkcolor="bk_wnd_lightcolor">
+    <HBox width="stretch" height="35" bkcolor="bk_wnd_lightcolor">
+	  <Label text="息屏助手" font="system_14" valign="center" margin="8"/>
+      <Control />
+      <Button class="btn_wnd_min" name="minbtn" margin="4,6,0,0"/>
+      <Box width="21" margin="4,6,0,0">
+        <Button class="btn_wnd_max" name="maxbtn"/>
+        <Button class="btn_wnd_restore" name="restorebtn" visible="false"/>
+      </Box>
+      <Button class="btn_wnd_close" name="minimize_window" margin="4,6,8,0"/>
+    </HBox>
+    <Box>
+      <VBox margin="0,0,0,0" valign="center" halign="center" width="auto" height="auto">
+		<CheckBox class="checkbox_font14" name="startup" text="跟随windows开机启动" margin="0,5,0,10" />
+		<Control height="16" />
+		
+		<CheckBox class="checkbox_font14" name="disable_mouse_wake_up" text="息屏后禁止鼠标点亮屏幕" />
+		<Label font="system_12" singleline="false" normaltextcolor="gray" text="有的鼠标比较灵敏，在黑屏时，按键盘太用力有时会导致鼠标细微移动而无法点亮屏幕"/>
+		<Control height="16" />
+		
+		<HBox valign="center" width="auto" height="auto">
+			<Box valign="center" width="auto" height="auto">
+				<CheckBox class="checkbox_font14" name="shutdown_display_when_timeout" text=" " />
+			</Box>
+			<RichEdit class="simple input" name="shutdown_display_timeout_minutes" number="true" height="30" width="60" margin="0,3" padding="6,6,6" promptmode="true" prompttext="分钟" promptcolor="lightcolor"/>
+			<Control width="4" />
+			<Box valign="center" width="auto" height="auto">
+				<Label font="system_14" singleline="false" text="分钟没有操作(不动键盘或鼠标)后关闭屏幕" />
+			</Box>
+		</HBox>
+		<Label font="system_12" singleline="false" normaltextcolor="gray" text="系统设置关屏时间和这里的时间，以其中最小的为准，系统设置的关屏时间建议设置久一点"/>
+		<Control height="16" />
+		
+		<HBox valign="center" width="auto" height="auto">
+			<Box valign="center" width="auto" height="auto">
+				<CheckBox class="checkbox_font14" name="keep_screen_on_when_video_playing" text=" " />
+			</Box>
+			<RichEdit class="simple input" name="sensitivity_of_video_play_deteced" number="true" height="0" width="0" margin="0,3" padding="6,6,6" promptmode="true" prompttext="百分比" promptcolor="lightcolor"/>
+			<Control width="4" />
+			<Box valign="center" width="auto" height="auto">
+				<Label font="system_14" width="0" singleline="false" text="%的屏幕没有发生变化时关闭屏幕" />
+				<Label font="system_14" singleline="false" text="播放视频时不关闭屏屏" />
+			</Box>
+		</HBox>
+		<Label font="system_12" singleline="false" normaltextcolor="gray" text="定时后台截屏，对比画面相似度，屏幕相似度 < 90%时判定为播放视频"/>
+		<Control height="16" />
+		
+		
+		
+        <Label name="tooltip" singleline="false" font="system_14" normaltextcolor="gray" text="说明：鼠标左键点击托盘图标关闭屏幕，右键打开菜单。"/>
+		<Control height="16" />
+		
+		<Button class="btn_global_red_80x30" cursortype="hand" textpadding="8,8,8,8" name="create_shortcut" text="创建桌面快捷方式"/>
+      </VBox>
+    </Box>
+  </VBox>
+</Window>
