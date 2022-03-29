@@ -1,6 +1,6 @@
 # 熄屏助手
 
-主要是在公司午睡的时候不小心一下鼠标，屏幕就亮了，又不想关闭显示器电源，所以写了这个小工具，使用 [网易NIM Duilib](https://github.com/netease-im/NIM_Duilib_Framework) 开发，感谢NIM_Duilib_Framework和duilib开源项目
+主要是在公司午睡的时候不小心碰一下鼠标，屏幕就亮了，又不想关闭显示器电源，所以写了这个小工具，使用 [网易NIM Duilib](https://github.com/netease-im/NIM_Duilib_Framework) 开发，感谢NIM_Duilib_Framework和duilib开源项目
 
 ## 功能
 
